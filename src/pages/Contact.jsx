@@ -68,7 +68,7 @@ const Contact = () => {
                 <div className="contact-details">
                   <h3>Urgences</h3>
                   <p>Disponible 24h/24</p>
-                  <a href="tel:+33123456789">01 23 45 67 89</a>
+                  <a href="tel:+33123456789">911</a>
                 </div>
               </div>
 
@@ -79,7 +79,7 @@ const Contact = () => {
                 <div className="contact-details">
                   <h3>Email</h3>
                   <p>Réponse sous 24h</p>
-                  <a href="mailto:contact@bienveillance.org">contact@bienveillance.org</a>
+                  <a href="mailto:bienveillance23@gmail.com">bienveillance23@gmail.com</a>
                 </div>
               </div>
 
@@ -94,7 +94,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="contact-item">
+              {/* <div className="contact-item">
                 <div className="contact-icon">
                   <MapPin />
                 </div>
@@ -103,7 +103,7 @@ const Contact = () => {
                   <p>Centre d'accompagnement</p>
                   <span>123 Rue de la Bienveillance<br />75000 Paris</span>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Formulaire de contact */}

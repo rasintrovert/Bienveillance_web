@@ -57,19 +57,23 @@ const About = () => {
             <div className="mission-grid">
               <div className="mission-card">
                 <Target className="mission-icon" />
-                <h2>Notre Mission</h2>
+                <h2>Qui sommes-nous</h2>
                 <p>
-                  Rendre l'accompagnement psychosocial accessible à tous, 
-                  en offrant un soutien professionnel, bienveillant et confidentiel 
-                  aux personnes en difficulté.
+                  Le groupe « Bienveillance » est une initiative communautaire qui offre gratuitement un accompagnement psychosocial aux personnes confrontées à des difficultés telles que la dépression ou d’autres formes de détresse émotionnelle. Notre travail s’appuie sur des valeurs chrétiennes de compassion, d’entraide et de respect, et vise à apporter réconfort, espoir et mieux-être grâce à une approche combinant la psychologie et l’accompagnement humain. Notre équipe s’engage à offrir un espace sûr et confidentiel où chacun peut s’exprimer librement et recevoir un appui bienveillant sur le plan émotionnel et relationnel.
                 </p>
               </div>
               <div className="mission-card">
                 <Eye className="mission-icon" />
                 <h2>Notre Vision</h2>
                 <p>
-                  Un monde où chaque personne a accès au soutien dont elle a besoin 
-                  pour traverser les difficultés de la vie avec dignité et espoir.
+                  Être un acteur de référence dans le soutien psychologique gratuit tout en créant un espace d’écoute et d’accompagnement fondé sur la compassion, le respect et la solidarité. Nous aspirons à redonner espoir et confiance aux personnes traversant des difficultés émotionnelles ou mentales, en favorisant une approche humaine, bienveillante et professionnelle.
+                </p>
+              </div>
+              <div className="mission-card">
+                <Target className="mission-icon" />
+                <h2>Notre Mission</h2>
+                <p>
+                  Garantir un accompagnement psychosocial gratuit et accessible à toute personne traversant des moments de détresse émotionnelle. Nous nous engageons à fournir un soutien professionnel, empreint de bienveillance et d’humanité, afin de favoriser l’équilibre, la résilience et le mieux-être, tant au niveau individuel que collectif. Notre ambition est de contribuer à l’émergence d’une communauté solidaire et épanouie, évoluant dans un environnement rassurant où chacun peut trouver réconfort et espoir.
                 </p>
               </div>
             </div>

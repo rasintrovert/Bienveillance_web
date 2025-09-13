@@ -19,21 +19,21 @@ const Partner = () => {
       title: 'Accompagnateur psychosocial',
       description: 'Offrir un soutien direct aux personnes en difficulté',
       icon: Heart,
-      requirements: ['Formation en psychologie ou travail social', 'Empathie et écoute active', 'Disponibilité 4h/semaine minimum'],
+      requirements: ['Formation en psychologie ou travail social', 'Empathie et écoute active', 'Disponibilité 2h/semaine minimum'],
       commitment: '6 mois minimum'
     },
     {
       title: 'Coordinateur de bénévoles',
       description: 'Organiser et coordonner les activités des bénévoles',
       icon: Users,
-      requirements: ['Expérience en gestion d\'équipe', 'Organisation et communication', 'Disponibilité 8h/semaine'],
-      commitment: '1 an minimum'
+      requirements: ['Organisation et communication', 'Maîtrise des outils numériques', 'Disponibilité 8h/semaine'],
+      commitment: '6 mois minimum'
     },
     {
       title: 'Intervenant en ligne',
       description: 'Répondre aux demandes d\'aide via notre plateforme',
       icon: HandHeart,
-      requirements: ['Formation en relation d\'aide', 'Maîtrise des outils numériques', 'Disponibilité flexible'],
+      requirements: ['Maîtrise des outils numériques', ' Communication', 'Maîtrise des outils numériques', 'Disponibilité 2h/semaine'],
       commitment: '3 mois minimum'
     }
   ]
@@ -69,8 +69,7 @@ const Partner = () => {
         <div className="container">
           <h1>Devenir Partenaire ou Bénévole</h1>
           <p>
-            Rejoignez notre équipe et participez à notre mission d'accompagnement psychosocial. 
-            Ensemble, nous pouvons faire une différence dans la vie des personnes en difficulté.
+            Rejoignez-nous et devenez acteur du changement. Ensemble, apportons espoir et soutien aux personnes en difficulté.
           </p>
         </div>
       </section>
@@ -80,8 +79,7 @@ const Partner = () => {
         <div className="container">
           <h2>Devenir Bénévole</h2>
           <p className="section-intro">
-            Nos bénévoles sont au cœur de notre mission. Ils apportent leur temps, 
-            leurs compétences et leur bienveillance pour soutenir les personnes en difficulté.
+            Nos bénévoles sont au cœur de notre mission. Ils apportent leur temps, leurs compétences et leur bienveillance pour soutenir les personnes en difficulté.
           </p>
 
           <div className="volunteer-grid">
@@ -120,7 +118,7 @@ const Partner = () => {
       {/* Partnership Section */}
       <section className="partnership-section">
         <div className="container">
-          <h2>Partenariats</h2>
+          <h2>Devenir Partenaire</h2>
           <p className="section-intro">
             Nous collaborons avec des organisations, entreprises et institutions 
             pour étendre notre impact et améliorer nos services.

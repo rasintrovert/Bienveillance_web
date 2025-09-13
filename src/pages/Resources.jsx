@@ -37,21 +37,21 @@ const Resources = () => {
 
   const emergencyContacts = [
     {
-      name: "SOS Amitié",
-      phone: "09 72 39 40 50",
-      description: "Écoute anonyme et confidentielle 24h/24",
+      name: "Urgence 911",
+      phone: "911",
+      description: "Pour toute situation mettant votre sécurité ou votre vie en danger immédiat.",
       available: "24h/24"
     },
     {
-      name: "Croix-Rouge Écoute",
-      phone: "0800 858 858",
-      description: "Soutien psychologique gratuit",
+      name: "Info-Social 811 (option 2)",
+      phone: "811",
+      description: "Pour un soutien psychosocial gratuit et immédiat.",
       available: "24h/24"
     },
     {
-      name: "Fil Santé Jeunes",
-      phone: "0800 235 236",
-      description: "Pour les 12-25 ans, anonyme et gratuit",
+      name: "Centre de prévention du suicide – 1-866-APPELLE (1-866-277-3553)",
+      phone: "1-866-277-3553",
+      description: "Prévention du suicide",
       available: "9h-23h"
     }
   ]
@@ -73,8 +73,7 @@ const Resources = () => {
         <div className="container">
           <h1>Ressources et guides</h1>
           <p>
-            Découvrez nos articles, guides pratiques et contacts utiles 
-            pour vous accompagner dans votre bien-être psychosocial.
+            Explorez nos articles, guides pratiques et ressources utiles pour soutenir votre bien-être psychosocial.
           </p>
         </div>
       </div>
@@ -137,8 +136,7 @@ const Resources = () => {
           <section className="emergency-section">
             <h2>Contacts d'urgence</h2>
             <p className="emergency-intro">
-              En cas de détresse immédiate, ces services sont disponibles 24h/24 
-              pour vous écouter et vous soutenir.
+              En cas d’urgence ou de détresse, contactez ces services disponibles en tout temps.
             </p>
             <div className="emergency-grid">
               {emergencyContacts.map((contact, index) => (
@@ -165,7 +163,7 @@ const Resources = () => {
           </section>
 
           {/* Additional resources */}
-          <section className="additional-resources">
+          {/* <section className="additional-resources">
             <h2>Ressources supplémentaires</h2>
             <p className="section-intro">
               Explorez nos autres ressources pour enrichir votre parcours de bien-être.
@@ -219,7 +217,7 @@ const Resources = () => {
                 </button>
               </div>
             </div>
-          </section>
+          </section> */}
         </div>
       </div>
     </div>

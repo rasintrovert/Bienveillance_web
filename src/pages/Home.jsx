@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
-import { Heart, Users, Shield, Phone, ArrowRight, CheckCircle } from 'lucide-react'
+import { Heart, Users, Shield, Phone, ArrowRight, Target, Eye } from 'lucide-react'
 import './Home.css'
+
 
 const Home = () => {
   return (
@@ -10,11 +11,12 @@ const Home = () => {
         <div className="hero-container">
           <div className="hero-content">
             <h1 className="hero-title">
-              Accompagnement psychosocial <span className="highlight">bienveillant</span>
+              Accompagnement psychosocial humain <span className="highlight">bienveillant</span>
             </h1>
             <p className="hero-subtitle">
-              Vous n'êtes pas seul. Notre équipe de professionnels est là pour vous écouter, 
-              vous soutenir et vous accompagner dans vos difficultés.
+              Parce que personne ne devrait affronter ses épreuves seul,
+              notre équipe de professionnels est à vos côtés pour vous écouter,
+              vous soutenir et vous aider à traverser les moments difficiles.
             </p>
             <div className="hero-buttons">
               <Link to="/contact" className="btn btn-primary">
@@ -35,6 +37,7 @@ const Home = () => {
         </div>
       </section>
 
+
       {/* Features Section */}
       <section className="features">
         <div className="container">
@@ -44,68 +47,58 @@ const Home = () => {
               <div className="feature-icon">
                 <Heart />
               </div>
-              <h3>Approche bienveillante</h3>
-              <p>Un accompagnement chaleureux et sans jugement, centré sur vos besoins.</p>
+              <h3>Accompagnement humain et personnalisé</h3>
+              <p>Bienveillance met l’humain au cœur de ses services, en offrant un soutien personnalisé pour le développement personnel, social et professionnel de chaque individu.</p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">
                 <Shield />
               </div>
-              <h3>Confidentialité garantie</h3>
-              <p>Votre vie privée est protégée. Tous nos échanges restent strictement confidentiels.</p>
+              <h3>Expertise professionnelle et engagement</h3>
+              <p>L’équipe de Bienveillance est composée de professionnels qualifiés qui combinent savoir-faire et empathie, garantissant un accompagnement fiable et efficace dans des situations variées.</p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">
                 <Users />
               </div>
-              <h3>Équipe professionnelle</h3>
-              <p>Des intervenants qualifiés et expérimentés dans l'accompagnement psychosocial.</p>
+              <h3>Approche préventive et durable</h3>
+              <p>Bienveillance va au-delà des besoins immédiats, en aidant la communauté à renforcer ses compétences, son autonomie, sa résilience et son bien-être durable.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Preview */}
-      <section className="services-preview">
+
+      {/* About Preview (remplace Services) */}
+      <section className="about-preview">
         <div className="container">
-          <h2 className="section-title">Nos services d'accompagnement</h2>
-          <div className="services-grid">
-            <div className="service-card">
-              <h3>Accompagnement individuel</h3>
-              <p>Soutien personnalisé pour traverser les difficultés de la vie quotidienne.</p>
-              <ul>
-                <li><CheckCircle size={16} /> Gestion du stress et de l'anxiété</li>
-                <li><CheckCircle size={16} /> Soutien dans les moments difficiles</li>
-                <li><CheckCircle size={16} /> Développement de la résilience</li>
-              </ul>
+          <h2 className="section-title">À propos</h2>
+          <div className="mission-grid">
+            <div className="mission-card">
+              <Target className="mission-icon" />
+              <h3>Qui sommes-nous</h3>
+              <p>
+                Le groupe « Bienveillance » est une initiative communautaire qui offre gratuitement un accompagnement psychosocial aux personnes confrontées à des difficultés telles que la dépression ou d’autres formes de détresse émotionnelle. Notre travail s’appuie sur des valeurs chrétiennes de compassion, d’entraide et de respect, et vise à apporter réconfort, espoir et mieux-être grâce à une approche combinant la psychologie et l’accompagnement humain. Notre équipe s’engage à offrir un espace sûr et confidentiel où chacun peut s’exprimer librement et recevoir un appui bienveillant sur le plan émotionnel et relationnel.
+              </p>
             </div>
-            <div className="service-card">
-              <h3>Soutien familial</h3>
-              <p>Accompagnement pour améliorer les relations et la communication familiale.</p>
-              <ul>
-                <li><CheckCircle size={16} /> Médiation familiale</li>
-                <li><CheckCircle size={16} /> Gestion des conflits</li>
-                <li><CheckCircle size={16} /> Soutien parental</li>
-              </ul>
+            <div className="mission-card">
+              <Eye className="mission-icon" />
+              <h3>Notre Vision</h3>
+              <p>
+                Être un acteur de référence dans le soutien psychologique gratuit tout en créant un espace d’écoute et d’accompagnement fondé sur la compassion, le respect et la solidarité. Nous aspirons à redonner espoir et confiance aux personnes traversant des difficultés émotionnelles ou mentales, en favorisant une approche humaine, bienveillante et professionnelle.
+              </p>
             </div>
-            <div className="service-card">
-              <h3>Groupes de parole</h3>
-              <p>Partagez vos expériences dans un cadre sécurisé et bienveillant.</p>
-              <ul>
-                <li><CheckCircle size={16} /> Soutien par les pairs</li>
-                <li><CheckCircle size={16} /> Échanges constructifs</li>
-                <li><CheckCircle size={16} /> Développement de liens sociaux</li>
-              </ul>
+            <div className="mission-card">
+              <Target className="mission-icon" />
+              <h3>Notre Mission</h3>
+              <p>
+                Garantir un accompagnement psychosocial gratuit et accessible à toute personne traversant des moments de détresse émotionnelle. Nous nous engageons à fournir un soutien professionnel, empreint de bienveillance et d’humanité, afin de favoriser l’équilibre, la résilience et le mieux-être, tant au niveau individuel que collectif. Notre ambition est de contribuer à l’émergence d’une communauté solidaire et épanouie, évoluant dans un environnement rassurant où chacun peut trouver réconfort et espoir.
+              </p>
             </div>
-          </div>
-          <div className="services-cta">
-            <Link to="/services" className="btn btn-primary">
-              Voir tous nos services
-              <ArrowRight size={20} />
-            </Link>
           </div>
         </div>
       </section>
+
 
       {/* CTA Section */}
       <section className="cta-section">
@@ -129,4 +122,5 @@ const Home = () => {
   )
 }
 
-export default Home 
+
+export default Home

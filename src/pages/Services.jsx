@@ -6,13 +6,13 @@ const Services = () => {
   const services = [
     {
       id: 1,
-      title: "Accompagnement individuel",
+      title: "Accompagnement psychosocial personnalisé",
       description: "Un soutien personnalisé pour traverser les difficultés de la vie quotidienne.",
       icon: Heart,
       features: [
-        "Gestion du stress et de l'anxiété",
-        "Soutien dans les moments difficiles",
-        "Développement de la résilience"
+        "Espace sûr et confidentiel pour exprimer ses difficultés.",
+        "Soutien adapté aux besoins individuels.",
+        "Appui à la gestion des défis psychosociaux."
       ]
     },
     {
@@ -23,18 +23,51 @@ const Services = () => {
       features: [
         "Médiation familiale",
         "Gestion des conflits",
-        "Soutien parental"
+        "Coaching parental"
       ]
     },
     {
       id: 3,
-      title: "Groupes de parole",
+      title: "Groupes de soutien thématiques",
       description: "Partagez vos expériences dans un cadre sécurisé et bienveillant.",
       icon: Shield,
       features: [
-        "Soutien par les pairs",
-        "Échanges constructifs",
-        "Développement de liens sociaux"
+        "Rencontres collectives",
+        "Animation de groupes de parole",
+        "Partage d’expériences",
+        "Soutien sur des thématiques psychosociales."
+      ]
+    },
+    {
+      id: 4,
+      title: "Ateliers de sensibilisation et prévention",
+      description: "Partagez vos expériences dans un cadre sécurisé et bienveillant.",
+      icon: Shield,
+      features: [
+        "Activités éducatives sur la santé mentale.",
+        "Session de formation et de sensibilisation psychosociale.",
+        "Activités récréatives et de bien-être psychosociales.",
+      ]
+    },
+    {
+      id: 5,
+      title: "Renforcement professionnel et orientation vers l’emploi",
+      description: "Partagez vos expériences dans un cadre sécurisé et bienveillant.",
+      icon: Shield,
+      features: [
+        "Soutien au développement de compétences professionnelles",
+        "Préparation de CV",
+        "Recherche d’emploi et l’accès à des formations adaptées."
+      ]
+    },
+    {
+      id: 6,
+      title: "Orientation vers d’autres ressources et services",
+      description: "Partagez vos expériences dans un cadre sécurisé et bienveillant.",
+      icon: Shield,
+      features: [
+        "Accompagnement vers des services complémentaires.",
+        "Répondre aux questions spécifiques des bénéficiaires."
       ]
     }
   ]

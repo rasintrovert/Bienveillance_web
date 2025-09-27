@@ -46,7 +46,7 @@ const Footer = () => {
           <h3 className="footer-title">Ressources</h3>
           <ul className="footer-links">
             <li><Link to="/resources">Rapport d’activités Bienveillance</Link></li>
-            <li><Link to="/resources">Livre électronique en libre accès (Il y aura un lien drive avec des livres psychosociaux)</Link></li>
+            <li><Link to="/resources">Livre électronique en libre accès</Link></li>
             <li><Link to="/resources">Articles et guides</Link></li>
             <li><Link to="/about">Publication</Link></li>
           </ul>

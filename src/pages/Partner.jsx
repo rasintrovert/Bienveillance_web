@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
-import { 
-  Users, 
-  Heart, 
-  HandHeart, 
-  Calendar, 
-  MapPin, 
-  Mail, 
+import {
+  Users,
+  Heart,
+  HandHeart,
+  Calendar,
+  MapPin,
+  Mail,
   Phone,
   ArrowRight,
   Star,
@@ -53,13 +53,13 @@ const Partner = () => {
       benefits: ['Expertise partagée', 'Réseau élargi', 'Impact communautaire'],
       contact: 'collaboration@bienveillance.org'
     },
-    {
-      title: 'Partenariat de compétences',
-      description: 'Partagez vos compétences professionnelles',
-      icon: Users,
-      benefits: ['Développement professionnel', 'Sens du service', 'Réseau solidaire'],
-      contact: 'competences@bienveillance.org'
-    }
+    // {
+    //   title: 'Partenariat de compétences',
+    //   description: 'Partagez vos compétences professionnelles',
+    //   icon: Users,
+    //   benefits: ['Développement professionnel', 'Sens du service', 'Réseau solidaire'],
+    //   contact: 'competences@bienveillance.org'
+    // }
   ]
 
   return (
@@ -90,7 +90,7 @@ const Partner = () => {
                   <h3>{role.title}</h3>
                   <p>{role.description}</p>
                 </div>
-                
+
                 <div className="role-details">
                   <h4>Profil recherché :</h4>
                   <ul>
@@ -98,7 +98,7 @@ const Partner = () => {
                       <li key={reqIndex}>{req}</li>
                     ))}
                   </ul>
-                  
+
                   <div className="commitment">
                     <Calendar size={16} />
                     <span>Engagement : {role.commitment}</span>
@@ -120,7 +120,7 @@ const Partner = () => {
         <div className="container">
           <h2>Devenir Partenaire</h2>
           <p className="section-intro">
-            Nous collaborons avec des organisations, entreprises et institutions 
+            Nous collaborons avec des organisations, entreprises et institutions
             pour étendre notre impact et améliorer nos services.
           </p>
 
@@ -132,7 +132,7 @@ const Partner = () => {
                   <h3>{partnership.title}</h3>
                   <p>{partnership.description}</p>
                 </div>
-                
+
                 <div className="partnership-benefits">
                   <h4>Avantages :</h4>
                   <ul>
@@ -161,12 +161,11 @@ const Partner = () => {
       <section className="partner-cta">
         <div className="container">
           <div className="cta-content">
-            <h2>Prêt à nous rejoindre ?</h2>
+            <h2>Prêt(e) à contribuer et à inspirer ?</h2>
             <p>
-              Que vous souhaitiez devenir bénévole ou partenaire, 
-              nous sommes là pour vous accompagner dans votre démarche.
+              Que vous souhaitiez devenir bénévole ou partenaire, nous vous accompagnons à chaque étape de votre engagement.
             </p>
-            
+
             <div className="cta-buttons">
               <Link to="/contact" className="btn btn-primary">
                 <Phone size={16} />

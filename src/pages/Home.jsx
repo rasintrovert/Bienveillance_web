@@ -14,7 +14,7 @@ const Home = () => {
               Accompagnement psychosocial humain <span className="highlight">bienveillant</span>
             </h1>
             <p className="hero-subtitle">
-              Parce que personne ne devrait affronter ses épreuves seul,
+              Parce que personne ne devrait affronter ses épreuves seules,
               notre équipe de professionnels est à vos côtés pour vous écouter,
               vous soutenir et vous aider à traverser les moments difficiles.
             </p>

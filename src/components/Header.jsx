@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, X, Heart } from 'lucide-react'
 import './Header.css'
+import Logo from '../assets/Bienveillance_logo.png'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -24,7 +25,7 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo">
-          <Heart className="logo-icon" />
+          <img src={Logo} alt="Logo" height="60 px" />
           <span className="logo-text">Bienveillance</span>
         </Link>
 

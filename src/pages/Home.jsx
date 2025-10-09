@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Heart, Users, Shield, Phone, ArrowRight, Target, Eye } from 'lucide-react'
 import './Home.css'
+import SeanceTherapie from '../assets/SeanceTherapie.jpg'
 
 
 const Home = () => {
@@ -30,9 +31,11 @@ const Home = () => {
             </div>
           </div>
           <div className="hero-image">
-            <div className="hero-illustration">
-              <Heart className="hero-heart" />
-            </div>
+            <img 
+              src={SeanceTherapie} 
+              alt="Accompagnement et soutien - Mains qui se tiennent" 
+              className="hero-img"
+            />
           </div>
         </div>
       </section>
@@ -97,6 +100,8 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        
       </section>
 
 

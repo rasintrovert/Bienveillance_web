@@ -76,10 +76,10 @@ const Services = () => {
     <div className="services-page">
       <div className="services-hero">
         <div className="container">
-          <h1>Nos Services d'Accompagnement</h1>
+          <h1>Nos services de soutien et d’accompagnement
+          </h1>
           <p>
-            Nous proposons une gamme complète de services d'accompagnement psychosocial 
-            adaptés à vos besoins spécifiques.
+            À Bienveillance, nous mettons à votre disposition des services d’accompagnement psychosocial personnalisés, adaptés à vos réalités et à vos besoins.
           </p>
         </div>
       </div>
@@ -96,7 +96,7 @@ const Services = () => {
                   <h2>{service.title}</h2>
                   <p>{service.description}</p>
                 </div>
-                
+
                 <div className="service-features">
                   <ul>
                     {service.features.map((feature, index) => (

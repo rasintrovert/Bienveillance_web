@@ -83,36 +83,11 @@ const Footer = () => {
                 <span className="contact-value">Lun-Ven : 9h-18h</span>
               </div>
             </div>
-            {/* <div className="contact-item">
-              <MapPin className="contact-icon" />
-              <div className="contact-details">
-                <span className="contact-label">Adresse</span>
-                <span className="contact-value">123 Rue de la Bienveillance, 75000 Paris</span>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
 
-      {/* <div className="footer-newsletter">
-        <div className="newsletter-content">
-          <div className="newsletter-text">
-            <h4>Restez informé</h4>
-            <p>Recevez nos conseils et actualités pour votre bien-être</p>
-          </div>
-          <div className="newsletter-form">
-            <input 
-              type="email" 
-              placeholder="Votre email" 
-              className="newsletter-input"
-            />
-            <button className="newsletter-btn">
-              S'abonner
-              <ArrowRight size={16} />
-            </button>
-          </div>
-        </div>
-      </div> */}
+      
 
       <div className="footer-bottom">
         <div className="footer-bottom-content">

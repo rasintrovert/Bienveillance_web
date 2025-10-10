@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Heart, Users, Shield, Phone, ArrowRight, Target, Eye } from 'lucide-react'
+import { Heart, Users, Shield, Phone, ArrowRight, Target, Eye, Award } from 'lucide-react'
 import './Home.css'
 import SeanceTherapie from '../assets/SeanceTherapie.jpg'
 
@@ -97,6 +97,25 @@ const Home = () => {
               <p>
                 Garantir un accompagnement psychosocial gratuit et accessible à toute personne traversant des moments de détresse émotionnelle. Nous nous engageons à fournir un soutien professionnel, empreint de bienveillance et d’humanité, afin de favoriser l’équilibre, la résilience et le mieux-être, tant au niveau individuel que collectif. Notre ambition est de contribuer à l’émergence d’une communauté solidaire et épanouie, évoluant dans un environnement rassurant où chacun peut trouver réconfort et espoir.
               </p>
+            </div>
+          </div>
+
+          {/* Notre Engagement */}
+          <div className="commitment-section-home">
+            <div className="commitment-content">
+              <Award className="commitment-icon" />
+              <h2>Notre Engagement</h2>
+              <p>
+                Nous nous engageons à maintenir les plus hauts standards de qualité 
+                dans notre accompagnement, en respectant l'éthique professionnelle 
+                et en nous formant continuellement aux meilleures pratiques.
+              </p>
+              <ul className="commitment-list">
+                <li>Formation continue de notre équipe</li>
+                <li>Supervision régulière de nos pratiques</li>
+                <li>Respect des codes de déontologie</li>
+                <li>Évaluation continue de nos services</li>
+              </ul>
             </div>
           </div>
         </div>

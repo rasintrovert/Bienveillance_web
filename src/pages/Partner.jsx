@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   Users,
@@ -12,28 +13,40 @@ import {
   Award
 } from 'lucide-react'
 import './Partner.css'
+import PartnerForm from './PartnerForm'
 
 const Partner = () => {
+  const [showForm, setShowForm] = useState(false)
+  const [formType, setFormType] = useState('volunteer')
+
+  const openForm = (type) => {
+    setFormType(type)
+    setShowForm(true)
+  }
+
+  const closeForm = () => {
+    setShowForm(false)
+  }
   const volunteerRoles = [
     {
-      title: 'Accompagnateur psychosocial',
-      description: 'Offrir un soutien direct aux personnes en difficulté',
+      title: 'Écoute et soutien psychosocial',
+      description: 'Intervenant psychosocial',
       icon: Heart,
       requirements: ['Formation en psychologie ou travail social', 'Empathie et écoute active', 'Disponibilité 2h/semaine minimum'],
       commitment: '6 mois minimum'
     },
     {
-      title: 'Coordinateur de bénévoles',
-      description: 'Organiser et coordonner les activités des bénévoles',
+      title: 'Soutien administratif et organisationnel',
+      description: 'Agent administratif',
       icon: Users,
-      requirements: ['Organisation et communication', 'Maîtrise des outils numériques', 'Disponibilité 8h/semaine'],
+      requirements: ['Organisation et communication', 'Maîtrise des outils numériques', 'Disponibilité 3h/semaine'],
       commitment: '6 mois minimum'
     },
     {
-      title: 'Intervenant en ligne',
-      description: 'Répondre aux demandes d\'aide via notre plateforme',
+      title: 'Animation et accompagnement d\'atelier',
+      description: 'Animateur',
       icon: HandHeart,
-      requirements: ['Maîtrise des outils numériques', ' Communication', 'Maîtrise des outils numériques', 'Disponibilité 2h/semaine'],
+      requirements: ['Maîtrise des outils numériques', ' Communication', 'Disponibilité 2h/semaine'],
       commitment: '3 mois minimum'
     }
   ]
@@ -41,24 +54,24 @@ const Partner = () => {
   const partnershipTypes = [
     {
       title: 'Partenariat financier',
-      description: 'Soutenez nos programmes par un don ou un mécénat',
+      description: 'Contribuez à nos programmes en faisant un don ou en devenant mécène',
       icon: Award,
-      benefits: ['Reçu fiscal', 'Visibilité sur nos supports', 'Rapports d\'impact réguliers'],
-      contact: 'partenariats@bienveillance.org'
+      benefits: ['Un avantage fiscal : recevez un reçu officiel pour vos contributions.', 'Une visibilité valorisante : votre engagement mis en avant sur nos supports (site web, réseaux sociaux, événements).', 'Une transparence totale : des rapports d’impact réguliers qui démontrent concrètement l’effet de votre soutien dans la communauté.'],
+      contact: 'bienveillance23@gmail.com'
     },
     {
-      title: 'Partenariat opérationnel',
-      description: 'Collaborons sur des projets spécifiques',
+      title: 'Partenariat opérationnel et de compétence',
+      description: 'Apportez vos compétences et participez à la réalisation de projets concrets et porteurs de sens.',
       icon: Star,
-      benefits: ['Expertise partagée', 'Réseau élargi', 'Impact communautaire'],
-      contact: 'collaboration@bienveillance.org'
+      benefits: ['Partage d’expertise : mettez vos compétences au service de projets concrets.', 'Réseau solidaire : collaborez et échangez avec des professionnels engagés.', 'Impact communautaire : contribuez à des initiatives qui font une réelle différence dans la communauté.'],
+      contact: 'bienveillance23@gmail.com'
     },
     // {
     //   title: 'Partenariat de compétences',
     //   description: 'Partagez vos compétences professionnelles',
     //   icon: Users,
     //   benefits: ['Développement professionnel', 'Sens du service', 'Réseau solidaire'],
-    //   contact: 'competences@bienveillance.org'
+    //   contact:'bienveillance23@gmail.com'
     // }
   ]
 
@@ -105,10 +118,10 @@ const Partner = () => {
                   </div>
                 </div>
 
-                <Link to="/contact" className="btn btn-primary">
+                <button onClick={() => openForm('volunteer')} className="btn btn-primary">
                   Postuler
                   <ArrowRight size={16} />
-                </Link>
+                </button>
               </div>
             ))}
           </div>
@@ -118,10 +131,9 @@ const Partner = () => {
       {/* Partnership Section */}
       <section className="partnership-section">
         <div className="container">
-          <h2>Devenir Partenaire</h2>
+          <h2>Collaboration et Partenariats</h2>
           <p className="section-intro">
-            Nous collaborons avec des organisations, entreprises et institutions
-            pour étendre notre impact et améliorer nos services.
+            Grâce à nos partenariats avec des organisations, des entreprises et des institutions, nous élargissons notre action et optimisons nos services.
           </p>
 
           <div className="partnership-grid">
@@ -147,10 +159,10 @@ const Partner = () => {
                   <span>{partnership.contact}</span>
                 </div>
 
-                <Link to="/contact" className="btn btn-secondary">
+                <button onClick={() => openForm('partner')} className="btn btn-secondary">
                   Nous contacter
                   <ArrowRight size={16} />
-                </Link>
+                </button>
               </div>
             ))}
           </div>
@@ -178,6 +190,11 @@ const Partner = () => {
           </div>
         </div>
       </section>
+
+      {/* Form Modal */}
+      {showForm && (
+        <PartnerForm formType={formType} onClose={closeForm} />
+      )}
     </div>
   )
 }

@@ -117,7 +117,7 @@ const Services = () => {
         <div className="container">
           <div className="cta-content">
             <h2>Prêt à commencer ?</h2>
-            <p>Prenez contact avec nous pour discuter de vos besoins.</p>
+            <p>Contactez-nous pour discuter de vos besoins et trouver ensemble les meilleures solutions !</p>
             <div className="cta-buttons">
               <Link to="/contact" className="btn btn-primary">
                 <Phone size={20} />

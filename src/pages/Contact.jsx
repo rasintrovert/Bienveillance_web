@@ -10,6 +10,7 @@ const Contact = () => {
     subject: '',
     message: '',
     age: '',
+    sex: '', // Ajout du champ sexe
     urgency: 'normal'
   })
 
@@ -26,7 +27,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
+
     setTimeout(() => {
       alert('Votre message a été envoyé. Nous vous répondrons dans les plus brefs délais.')
       setFormData({
@@ -36,6 +37,7 @@ const Contact = () => {
         subject: '',
         message: '',
         age: '',
+        sex: '', // Réinitialisation du champ sexe
         urgency: 'normal'
       })
       setIsSubmitting(false)
@@ -48,7 +50,7 @@ const Contact = () => {
         <div className="container">
           <h1>Contactez-nous</h1>
           <p>
-            Nous sommes là pour vous écouter. N'hésitez pas à nous contacter 
+            Nous sommes là pour vous écouter. N'hésitez pas à nous contacter
             pour toute question ou pour prendre rendez-vous.
           </p>
         </div>
@@ -60,7 +62,7 @@ const Contact = () => {
             {/* Informations de contact */}
             <div className="contact-info">
               <h2>Nos coordonnées</h2>
-              
+
               <div className="contact-item">
                 <div className="contact-icon">
                   <Phone />
@@ -93,23 +95,16 @@ const Contact = () => {
                   <span>9h00 - 18h00</span>
                 </div>
               </div>
-
-              {/* <div className="contact-item">
-                <div className="contact-icon">
-                  <MapPin />
-                </div>
-                <div className="contact-details">
-                  <h3>Adresse</h3>
-                  <p>Centre d'accompagnement</p>
-                  <span>123 Rue de la Bienveillance<br />75000 Paris</span>
-                </div>
-              </div> */}
             </div>
 
             {/* Formulaire de contact */}
             <div className="contact-form-container">
               <h2>Envoyez-nous un message</h2>
-              <form className="contact-form" onSubmit={handleSubmit}>
+              <form
+                className="contact-form"
+                action="https://formspree.io/f/xleqzqzq"
+                method="POST"
+              >
                 <div className="form-row">
                   <div className="form-group">
                     <label htmlFor="name">Nom complet *</label>
@@ -117,8 +112,6 @@ const Contact = () => {
                       type="text"
                       id="name"
                       name="name"
-                      value={formData.name}
-                      onChange={handleChange}
                       required
                     />
                   </div>
@@ -128,8 +121,6 @@ const Contact = () => {
                       type="email"
                       id="email"
                       name="email"
-                      value={formData.email}
-                      onChange={handleChange}
                       required
                     />
                   </div>
@@ -142,8 +133,6 @@ const Contact = () => {
                       type="tel"
                       id="phone"
                       name="phone"
-                      value={formData.phone}
-                      onChange={handleChange}
                     />
                   </div>
                   <div className="form-group">
@@ -152,20 +141,29 @@ const Contact = () => {
                       type="number"
                       id="age"
                       name="age"
-                      value={formData.age}
-                      onChange={handleChange}
                       min="0"
                       max="120"
                     />
                   </div>
+                  <div className="form-group">
+                    <label htmlFor="sex">Sexe</label>
+                    <select
+                      id="sex"
+                      name="sex"
+                    >
+                      <option value="">Sélectionnez</option>
+                      <option value="homme">Homme</option>
+                      <option value="femme">Femme</option>
+                      <option value="autre">Autre</option>
+                    </select>
+                  </div>
                 </div>
 
-                {/* Note importante pour les mineurs */}
                 <div className="minor-notice">
                   <div className="notice-icon">⚠️</div>
                   <div className="notice-content">
-                    <strong>Note importante :</strong> Pour les personnes mineures, 
-                    une référence professionnelle (médecin, travailleur social, etc.) 
+                    <strong>Note importante :</strong> Pour les personnes mineures,
+                    une référence professionnelle (médecin, travailleur social, etc.)
                     ou parentale est exigée pour tout accompagnement.
                   </div>
                 </div>
@@ -175,8 +173,6 @@ const Contact = () => {
                   <select
                     id="subject"
                     name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
                     required
                   >
                     <option value="">Choisissez un sujet</option>
@@ -192,8 +188,6 @@ const Contact = () => {
                   <select
                     id="urgency"
                     name="urgency"
-                    value={formData.urgency}
-                    onChange={handleChange}
                   >
                     <option value="normal">Normal</option>
                     <option value="important">Important</option>
@@ -206,8 +200,6 @@ const Contact = () => {
                   <textarea
                     id="message"
                     name="message"
-                    value={formData.message}
-                    onChange={handleChange}
                     rows="6"
                     placeholder="Décrivez votre situation et vos besoins..."
                     required
@@ -221,18 +213,9 @@ const Contact = () => {
                   </label>
                 </div>
 
-                <button type="submit" className="btn btn-primary" disabled={isSubmitting}>
-                  {isSubmitting ? (
-                    <>
-                      <Heart className="spinning" />
-                      Envoi en cours...
-                    </>
-                  ) : (
-                    <>
-                      <Send size={20} />
-                      Envoyer le message
-                    </>
-                  )}
+                <button type="submit" className="btn btn-primary">
+                  <Send size={20} />
+                  Envoyer le message
                 </button>
               </form>
             </div>
@@ -243,4 +226,4 @@ const Contact = () => {
   )
 }
 
-export default Contact 
+export default Contact

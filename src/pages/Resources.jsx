@@ -2,37 +2,30 @@ import { BookOpen, Phone, Users, Heart, ArrowRight, FileText, Calendar, Star, Cl
 import './Resources.css'
 
 const Resources = () => {
-  const articles = [
+  const articlesAndGuides = [
     {
       id: 1,
       title: "Gérer le stress au quotidien",
-      category: "Bien-être",
       description: "Des techniques simples et efficaces pour réduire le stress dans votre vie quotidienne.",
-      readTime: "5 min",
-      icon: Heart,
-      published: "15 janvier 2024",
-      author: "Dr. Marie Dupont"
+      link: "#", // Remplacez par le lien réel
+    }
+    // Ajoutez d'autres articles/guides ici
+  ]
+
+  const freeEbooks = [
+    {
+      id: 1,
+      title: "Bienveillance au quotidien",
+      author: "Jean Martin",
+      pdfUrl: "/ebooks/bienveillance-au-quotidien.pdf"
     },
     {
       id: 2,
-      title: "Améliorer la communication familiale",
-      category: "Famille",
-      description: "Conseils pratiques pour une meilleure communication au sein de votre famille.",
-      readTime: "8 min",
-      icon: Users,
-      published: "12 janvier 2024",
-      author: "Sophie Bernard"
-    },
-    {
-      id: 3,
-      title: "Reconnaître les signes de détresse",
-      category: "Santé mentale",
-      description: "Apprendre à identifier les signaux d'alarme chez soi et chez les autres.",
-      readTime: "6 min",
-      icon: Heart,
-      published: "10 janvier 2024",
-      author: "Jean Martin"
+      title: "Guide pratique du bien-être",
+      author: "Sophie Bernard",
+      pdfUrl: "/ebooks/guide-pratique-bien-etre.pdf"
     }
+    // Ajoutez d'autres ebooks ici
   ]
 
   const emergencyContacts = [
@@ -59,7 +52,7 @@ const Resources = () => {
   const handleArticleClick = (articleId) => {
     // Ici vous pourriez rediriger vers l'article complet ou ouvrir une modal
     console.log(`Ouverture de l'article ${articleId}`)
-    alert(`Article "${articles.find(a => a.id === articleId)?.title}" - Cette fonctionnalité sera bientôt disponible.`)
+    alert(`Article "${articlesAndGuides.find(a => a.id === articleId)?.title}" - Cette fonctionnalité sera bientôt disponible.`)
   }
 
   const handleResourceClick = (resourceType) => {
@@ -80,55 +73,75 @@ const Resources = () => {
 
       <div className="resources-content">
         <div className="container">
-          {/* Articles section */}
-          <section className="articles-section">
-            <h2>Articles et guides</h2>
-            <p className="section-intro">
-              Nos articles rédigés par des professionnels pour vous accompagner dans votre bien-être.
-            </p>
-            <div className="articles-grid">
-              {articles.map((article) => (
-                <div key={article.id} className="article-card">
-                  {/* Icône et Catégorie */}
-                  <div className="article-header">
-                    <div className="article-icon">
-                      <article.icon />
+
+          {/* Articles & Guides */}
+          <section className="modern-section">
+            <h2>Articles &amp; Guides</h2>
+            <div className="modern-grid">
+              {articlesAndGuides.length > 0 ? (
+                articlesAndGuides.map(article => (
+                  <div key={article.id} className="modern-card">
+                    <div className="modern-card-header">
+                      <FileText className="modern-card-icon" />
                     </div>
-                    <span className="article-category">{article.category}</span>
+                    <h3 className="modern-card-title">{article.title || "Titre non disponible"}</h3>
+                    <p className="modern-card-desc">
+                      {article.description || "Description à venir."}
+                    </p>
+                    <a
+                      href={article.link || "#"}
+                      className="modern-card-action"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Lire plus <ArrowRight size={16} />
+                    </a>
                   </div>
-                  
-                  {/* Titre de l'article */}
-                  <h3 className="article-title">{article.title}</h3>
-                  
-                  {/* Description courte */}
-                  <p className="article-description">{article.description}</p>
-                  
-                  {/* Métadonnées */}
-                  <div className="article-metadata">
-                    <div className="metadata-item">
-                      <Clock size={16} />
-                      <span>{article.readTime} de lecture</span>
-                    </div>
-                    <div className="metadata-item">
-                      <Calendar size={16} />
-                      <span>{article.published}</span>
-                    </div>
-                    <div className="metadata-item">
-                      <Users size={16} />
-                      <span>{article.author}</span>
-                    </div>
-                  </div>
-                  
-                  {/* Lien "Lire l'article" */}
-                  <button 
-                    className="article-read-more" 
-                    onClick={() => handleArticleClick(article.id)}
-                  >
-                    Lire l'article
-                    <ArrowRight size={16} />
-                  </button>
+                ))
+              ) : (
+                <div className="modern-card modern-card-placeholder">
+                  Aucun article ou guide disponible pour le moment.
                 </div>
-              ))}
+              )}
+            </div>
+          </section>
+
+          {/* Free eBooks */}
+          <section className="modern-section">
+            <h2>Livres numériques gratuits</h2>
+            <div className="modern-grid">
+              {freeEbooks.length > 0 ? (
+                freeEbooks.map(ebook => (
+                  <div key={ebook.id} className="modern-card">
+                    <div className="modern-card-header">
+                      <BookOpen className="modern-card-icon" />
+                    </div>
+                    <h3 className="modern-card-title">{ebook.title || "Titre non disponible"}</h3>
+                    <p className="modern-card-desc">
+                      {ebook.author ? `Auteur : ${ebook.author}` : "Auteur inconnu"}
+                    </p>
+                    {ebook.pdfUrl ? (
+                      <a
+                        href={ebook.pdfUrl}
+                        className="modern-card-action"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        download
+                      >
+                        Télécharger le PDF
+                      </a>
+                    ) : (
+                      <span className="modern-card-action disabled">
+                        PDF non disponible
+                      </span>
+                    )}
+                  </div>
+                ))
+              ) : (
+                <div className="modern-card modern-card-placeholder">
+                  Aucun livre numérique disponible pour le moment.
+                </div>
+              )}
             </div>
           </section>
 
@@ -224,4 +237,4 @@ const Resources = () => {
   )
 }
 
-export default Resources 
+export default Resources

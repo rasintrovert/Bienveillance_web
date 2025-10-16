@@ -15,7 +15,13 @@ const Footer = () => {
             Un accompagnement psychosocial professionnel et bienveillant, pour vous soutenir pas à pas sur le chemin du bien-être.
           </p>
           <div className="social-links">
-            <a href="https://www.facebook.com/Psybienveillance/" className="social-link" aria-label="Facebook">
+            <a
+              href="https://www.facebook.com/Psybienveillance/"
+              className="social-link"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Facebook size={20} />
             </a>
             {/* <a href="#" className="social-link" aria-label="Twitter">
@@ -24,7 +30,13 @@ const Footer = () => {
             <a href="#" className="social-link" aria-label="Instagram">
               <Instagram size={20} />
             </a> */}
-            <a href="https://www.linkedin.com/groups/13317068/" className="social-link" aria-label="LinkedIn">
+            <a
+              href="https://www.linkedin.com/groups/13317068/"
+              className="social-link"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Linkedin size={20} />
             </a>
           </div>
@@ -103,4 +115,4 @@ const Footer = () => {
   )
 }
 
-export default Footer 
+export default Footer

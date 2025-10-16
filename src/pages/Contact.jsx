@@ -60,10 +60,10 @@ const Contact = () => {
         <div className="container">
           <div className="contact-grid">
             {/* Informations de contact */}
-            <div className="contact-info">
+            <div className="contact-info-contact">
               <h2>Nos coordonnées</h2>
 
-              <div className="contact-item">
+              <div className="contact-item-contact">
                 <div className="contact-icon">
                   <Phone />
                 </div>
@@ -74,7 +74,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="contact-item">
+              <div className="contact-item-contact">
                 <div className="contact-icon">
                   <Mail />
                 </div>
@@ -85,7 +85,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="contact-item">
+              <div className="contact-item-contact">
                 <div className="contact-icon">
                   <Clock />
                 </div>

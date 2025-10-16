@@ -31,9 +31,9 @@ const Home = () => {
             </div>
           </div>
           <div className="hero-image">
-            <img 
-              src={SeanceTherapie} 
-              alt="Accompagnement et soutien - Mains qui se tiennent" 
+            <img
+              src={SeanceTherapie}
+              alt="Accompagnement et soutien - Mains qui se tiennent"
               className="hero-img"
             />
           </div>
@@ -106,21 +106,21 @@ const Home = () => {
               <Award className="commitment-icon" />
               <h2>Notre Engagement</h2>
               <p>
-                Nous nous engageons à maintenir les plus hauts standards de qualité 
-                dans notre accompagnement, en respectant l'éthique professionnelle 
-                et en nous formant continuellement aux meilleures pratiques.
+                Nous nous engageons à offrir un accompagnement de la plus haute qualité,
+                fondé sur l’éthique professionnelle et renforcé
+                par la formation continue de notre équipe aux meilleures pratiques d’intervention.
               </p>
               <ul className="commitment-list">
-                <li>Formation continue de notre équipe</li>
-                <li>Supervision régulière de nos pratiques</li>
-                <li>Respect des codes de déontologie</li>
-                <li>Évaluation continue de nos services</li>
+                <li>Formation continue de notre équipe pour rester à jour et renforcer nos compétences.</li>
+                <li>Respect strict des codes de déontologie, gage d’éthique et de professionnalisme.</li>
+                <li>Supervision régulière des pratiques afin de garantir un accompagnement rigoureux et bienveillant.</li>
+                <li>Évaluation continue de nos services pour assurer qualité et amélioration constante.</li>
               </ul>
             </div>
           </div>
         </div>
 
-        
+
       </section>
 
 

@@ -5,9 +5,9 @@ const Resources = () => {
   const articlesAndGuides = [
     {
       id: 1,
-      title: "Gérer le stress au quotidien",
-      description: "Des techniques simples et efficaces pour réduire le stress dans votre vie quotidienne.",
-      link: "#", // Remplacez par le lien réel
+      title: "Coup d'œil sur l'inceste…  un phénomène humain.",
+      description: "Sonia Secours Jean",
+      link: "https://docs.google.com/presentation/d/1ttWGTON8LIynOtIrbCCnZzKpifMKr8Z2/edit?usp=drive_link&ouid=117019628752951270483&rtpof=true&sd=true", // Remplacez par le lien réel
     }
     // Ajoutez d'autres articles/guides ici
   ]
@@ -15,15 +15,28 @@ const Resources = () => {
   const freeEbooks = [
     {
       id: 1,
-      title: "Bienveillance au quotidien",
-      author: "Jean Martin",
-      pdfUrl: "/ebooks/bienveillance-au-quotidien.pdf"
+      title: "Si ton enfant te dit que quelqu’un l’a touché sexuellement, écoute-le ! Non, personne n’a le droit de leur faire ça !",
+      author: "CAVAC Centre d’aide aux victimes d’actes criminels",
+      pdfUrl: "https://drive.google.com/file/d/1nU9gK1jUU43YdoKvfH5gu6HYcoPKCzXz/view?usp=drive_link"
     },
     {
       id: 2,
-      title: "Guide pratique du bien-être",
-      author: "Sophie Bernard",
-      pdfUrl: "/ebooks/guide-pratique-bien-etre.pdf"
+      title: "Arrêtez d'être gentil, Fixez des limites et soyez vrai",
+      author: "Carla Giacomello",
+      pdfUrl: "https://drive.google.com/file/d/1hpmnJUtodP7Vyfii46SP9UOYX5QIoxff/view?usp=drive_link"
+    },
+
+    {
+      id: 3,
+      title: "L'état de stress aigu : Brochure explicative pour les patients et leurs proches",
+      author: "Dre Léa Renaud-Cloutier et révisé par plusieurs psychiatres",
+      pdfUrl: "https://drive.google.com/file/d/1rqNU_GgKLZOBG2iXs9ZOdLuHBNsHAlJg/view?usp=drive_link"
+    },
+    {
+      id: 4,
+      title: "",
+      author: "",
+      pdfUrl: ""
     }
     // Ajoutez d'autres ebooks ici
   ]

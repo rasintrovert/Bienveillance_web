@@ -99,7 +99,7 @@ const Footer = () => {
         </div>
       </div>
 
-      
+
 
       <div className="footer-bottom">
         <div className="footer-bottom-content">

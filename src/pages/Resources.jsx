@@ -34,11 +34,58 @@ const Resources = () => {
     },
     {
       id: 4,
-      title: "",
-      author: "",
-      pdfUrl: ""
+      title: "Comprendre et passer au travers de la DÉPENDANCE",
+      author: "Wendy Kittlitz, Dr. Russ Rainey, Geremy Keeton, Joann Condie, Catherine Wilson, Focus on the Family, Dr. Gregory Jantz",
+      pdfUrl: "https://drive.google.com/file/d/1M7qJAZ5nK5w4e9HonLQS2OLmi4Hs5jHw/view?usp=drive_link"
+    },
+    {
+      id: 5,
+      title: "Dépression et guérison (2)",
+      author: "Aaron Kayayan",
+      pdfUrl: "https://drive.google.com/file/d/1F1ey1ahPsi9bhOrXPuVZIcXkVQj-_943/view?usp=drive_link"
+    },
+    {
+      id: 6,
+      title: "Faire face à ses peurs",
+      author: "Professeur Paul Farrand, Mike Sheppard",
+      pdfUrl: "https://drive.google.com/file/d/1hi_SYWSeC2uvBakpu9rie-IK9CZC5VVD/view?usp=drive_link"
+    },
+    {
+      id: 7,
+      title: "VOTRE GUIDE POUR LE JEÛNE ET LA PRIÈRE",
+      author: "Bill Bright",
+      pdfUrl: "https://drive.google.com/file/d/1U2KiSayP9JeqVNmBAZYqcC7wqIeaoNX9/view?usp=drive_link"
+    },
+    {
+      id: 8,
+      title: "L'insomnie / Brochure explicative pour les patients et leurs proches",
+      author: "créé par Dre Camille Lévesque et révisé par les Drs Thanh-Lan Ngô, Jean Leblanc et Jean Goulet",
+      pdfUrl: "https://drive.google.com/file/d/16sxrmEXmi8UzBK6DXwsrHU0E2GDlC4zg/view?usp=drive_link"
+    },
+    {
+      id: 9,
+      title: "Je n'ai plus peur du jugement des autres (Cahier d'Exercice)",
+      author: " Chantal Joffrin Le Clerc et Franck Lamagnère",
+      pdfUrl: "https://drive.google.com/file/d/1msM7PGTPA_W0d1zLWIybjxySQKNsmVRs/view?usp=drive_link"
+    },
+    {
+      id: 10,
+      title: "Je n'ai plus peur du jugement des autres (Cahier d'Exercice)",
+      author: " Chantal Joffrin Le Clerc et Franck Lamagnère",
+      pdfUrl: "https://drive.google.com/file/d/1msM7PGTPA_W0d1zLWIybjxySQKNsmVRs/view?usp=drive_link"
+    },
+    {
+      id: 10,
+      title: "L'auto-compassion : Une des clés de la santé mentale",
+      author: "Professionnels de la santé mentale du Centre de santé mentale Royal Ottawa et membres du comité de promotion de la santé mentale du Centre hospitalier pour enfants de l'est de l'Ontario (CHEO), avec l'inspiration de la Dre Kristin Neff, Noah Spector et Eva Schacherl.",
+      pdfUrl: "https://drive.google.com/file/d/1oSKbe9a05bcitTdIZ2sw-n-SjnmTROOr/view?usp=drive_link"
+    },
+    {
+      id: 11,
+      title: "Méditation et autocompassion",
+      author: "présenté par l'Université de Montréal et le Centre intégré universitaire de santé et de services sociaux du Nord-de-l'Île-de-Montréal (CIUSSS du Nord-de-l'Île-de-Montréal)",
+      pdfUrl: "https://drive.google.com/file/d/1om8wA50HDwP80kttDlkk29msGhQk87pY/view?usp=drive_link"
     }
-    // Ajoutez d'autres ebooks ici
   ]
 
   const emergencyContacts = [
@@ -131,7 +178,7 @@ const Resources = () => {
                     </div>
                     <h3 className="modern-card-title">{ebook.title || "Titre non disponible"}</h3>
                     <p className="modern-card-desc">
-                      {ebook.author ? `Auteur : ${ebook.author}` : "Auteur inconnu"}
+                      {ebook.author ? `Auteur(s) : ${ebook.author}` : "Auteur inconnu"}
                     </p>
                     {ebook.pdfUrl ? (
                       <a
@@ -141,7 +188,7 @@ const Resources = () => {
                         rel="noopener noreferrer"
                         download
                       >
-                        Télécharger le PDF
+                        Lire le livre <ArrowRight size={16} />
                       </a>
                     ) : (
                       <span className="modern-card-action disabled">

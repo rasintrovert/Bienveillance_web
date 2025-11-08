@@ -57,21 +57,21 @@ const Partner = () => {
       description: 'Contribuez à nos programmes en faisant un don ou en devenant mécène',
       icon: Award,
       benefits: ['Un avantage fiscal : recevez un reçu officiel pour vos contributions.', 'Une visibilité valorisante : votre engagement mis en avant sur nos supports (site web, réseaux sociaux, événements).', 'Une transparence totale : des rapports d’impact réguliers qui démontrent concrètement l’effet de votre soutien dans la communauté.'],
-      contact: 'bienveillance23@gmail.com'
+      contact: 'administration@groupebienveillance.org'
     },
     {
       title: 'Partenariat opérationnel et de compétence',
       description: 'Apportez vos compétences et participez à la réalisation de projets concrets et porteurs de sens.',
       icon: Star,
       benefits: ['Partage d’expertise : mettez vos compétences au service de projets concrets.', 'Réseau solidaire : collaborez et échangez avec des professionnels engagés.', 'Impact communautaire : contribuez à des initiatives qui font une réelle différence dans la communauté.'],
-      contact: 'bienveillance23@gmail.com'
+      contact: 'administration@groupebienveillance.org'
     },
     // {
     //   title: 'Partenariat de compétences',
     //   description: 'Partagez vos compétences professionnelles',
     //   icon: Users,
     //   benefits: ['Développement professionnel', 'Sens du service', 'Réseau solidaire'],
-    //   contact:'bienveillance23@gmail.com'
+    //   contact:'administration@groupebienveillance.org'
     // }
   ]
 

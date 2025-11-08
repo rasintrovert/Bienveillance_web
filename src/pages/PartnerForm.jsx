@@ -70,7 +70,7 @@ const PartnerForm = ({ formType, onClose }) => {
       
       // For partnership, you could also trigger an email
       if (formData.category === 'partner') {
-        const mailtoLink = `mailto:bienveillance23@gmail.com?subject=${encodeURIComponent(`Demande de partenariat - ${formData.organizationType}`)}&body=${encodeURIComponent(`
+        const mailtoLink = `mailto:administration@groupebienveillance.org?subject=${encodeURIComponent(`Demande de partenariat - ${formData.organizationType}`)}&body=${encodeURIComponent(`
 Nom: ${formData.firstName} ${formData.lastName}
 Email: ${formData.email}
 Téléphone: ${formData.phone}

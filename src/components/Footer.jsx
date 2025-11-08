@@ -85,7 +85,7 @@ const Footer = () => {
               <Mail className="contact-icon" />
               <div className="contact-details">
                 <span className="contact-label">Courriel : </span>
-                <span className="contact-value"><a href="mailto:bienveillance23@gmail.com">bienveillance23@gmail.com</a></span>
+                <span className="contact-value"><a href="mailto:administration@groupebienveillance.org">administration@groupebienveillance.org</a></span>
               </div>
             </div>
             <div className="contact-item">

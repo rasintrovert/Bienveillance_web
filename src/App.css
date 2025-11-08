@@ -43,6 +43,8 @@ html, body {
 
 .main-content {
   flex: 1;
+  position: relative;
+  overflow: hidden;
 }
 
 .container {
@@ -101,6 +103,14 @@ html, body {
   color: white;
   border-color: #4a90a4;
   transform: translateY(-2px);
+}
+
+.page-transition {
+  width: 100%;
+  min-height: 100%;
+  display: block;
+  position: relative;
+  will-change: opacity, transform;
 }
 
 /* Responsive Design */

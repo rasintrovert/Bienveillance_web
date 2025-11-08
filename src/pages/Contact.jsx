@@ -62,37 +62,90 @@ const Contact = () => {
             {/* Informations de contact */}
             <div className="contact-info-contact">
               <h2>Nos coordonnées</h2>
+              <p className="contact-info-intro">
+                Choisissez le canal qui vous convient le mieux. Notre équipe veille à vous répondre rapidement et à vous accompagner
+                avec bienveillance tout au long de votre démarche.
+              </p>
 
-              <div className="contact-item-contact">
-                <div className="contact-icon">
-                  <Phone />
+              <div className="contact-info-highlight">
+                <div className="highlight-icon">
+                  <Heart size={20} />
                 </div>
-                <div className="contact-details">
-                  <h3>Urgences</h3>
-                  <p>Disponible 24h/24</p>
-                  <a href="tel:+33123456789">911</a>
+                <div className="highlight-content">
+                  <span>Réponse garantie sous 24 h ouvrées</span>
+                  <p>Pour les situations urgentes, téléphonez immédiatement au 911.</p>
                 </div>
               </div>
 
-              <div className="contact-item-contact">
-                <div className="contact-icon">
-                  <Mail />
+              <div className="contact-info-grid">
+                <div className="contact-card urgency">
+                  <div className="contact-card-header">
+                    <div className="contact-card-icon">
+                      <Phone />
+                    </div>
+                    <div>
+                      <h3>Urgence psychosociale</h3>
+                      <p>Disponible 24h/24</p>
+                    </div>
+                  </div>
+                  <a className="contact-card-value" href="tel:911">911</a>
+                  <p className="contact-card-meta">
+                    En cas de danger immédiat ou de crise grave, contactez le 911 sans attendre.
+                  </p>
                 </div>
-                <div className="contact-details">
-                  <h3>Email</h3>
-                  <p>Réponse sous 24h</p>
-                  <a href="mailto:bienveillance23@gmail.com">bienveillance23@gmail.com</a>
-                </div>
-              </div>
 
-              <div className="contact-item-contact">
-                <div className="contact-icon">
-                  <Clock />
+                <div className="contact-card phone">
+                  <div className="contact-card-header">
+                    <div className="contact-card-icon">
+                      <Phone />
+                    </div>
+                    <div>
+                      <h3>Téléphone principal</h3>
+                      <p>Accueil téléphonique</p>
+                    </div>
+                  </div>
+                  <a className="contact-card-value" href="tel:+17785576458">+1 778-557-6458</a>
+                  <p className="contact-card-meta">
+                    Lundi au vendredi • 9h00 - 18h00
+                  </p>
                 </div>
-                <div className="contact-details">
-                  <h3>Horaires</h3>
-                  <p>Lundi - Vendredi</p>
-                  <span>9h00 - 18h00</span>
+
+                <div className="contact-card email">
+                  <div className="contact-card-header">
+                    <div className="contact-card-icon">
+                      <Mail />
+                    </div>
+                    <div>
+                      <h3>Courriel</h3>
+                      <p>Réponse sous 24h ouvrées</p>
+                    </div>
+                  </div>
+                  <a
+                    className="contact-card-value"
+                    href="mailto:administration@groupebienveillance.org"
+                    title="administration@groupebienveillance.org"
+                  >
+                    administration@groupebienveillance.org
+                  </a>
+                  <p className="contact-card-meta">
+                    Partagez-nous votre situation pour que nous puissions vous orienter vers le bon intervenant.
+                  </p>
+                </div>
+
+                <div className="contact-card schedule">
+                  <div className="contact-card-header">
+                    <div className="contact-card-icon">
+                      <Clock />
+                    </div>
+                    <div>
+                      <h3>Horaires et rendez-vous</h3>
+                      <p>Rencontres sur rendez-vous</p>
+                    </div>
+                  </div>
+                  <span className="contact-card-value">Lun - Ven : 9h00 - 18h00</span>
+                  <p className="contact-card-meta">
+                    Séances individuelles, familiales ou de groupe en présentiel et en ligne selon vos besoins.
+                  </p>
                 </div>
               </div>
             </div>
